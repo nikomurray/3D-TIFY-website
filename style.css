@@ -56,8 +56,8 @@ ul {
 
 .container {
     margin: 0 auto;
-    width: 92%;
-    max-width: 1600px;
+    width: 94%;
+    max-width: 1800px;
 }
 
 
@@ -81,6 +81,10 @@ header {
 header nav {
     display: flex;
     gap: 5rem;
+    background: #00000051;
+    padding: 1.2rem 2rem;
+    border-radius: 8px;
+    height: 80px;
 }
 
 header .logo {
@@ -93,13 +97,12 @@ nav a {
     gap: 8px;
     font-size: 1.2rem;
     transition: all 0.2s;
-    padding-bottom: 8px;
     opacity: 0.8;
 }
 
 nav a:hover {
-    border-bottom: solid var(--white) 1px;
     opacity: 1;
+    transform: translateY(-1px);
 }
 
 header .dropdown-container {
@@ -121,10 +124,12 @@ main h1 {
     font-size: 3rem;
 }
 
+
 main h2 {
     font-size: 1.5rem;
     font-weight: 300;
     max-width: 750px;
+    border-radius: 4px;
 }
 
 main .buttons {
@@ -144,7 +149,8 @@ main .buttons {
 .cta {
     background-color: var(--purple);
     font-weight: 700;
-    opacity: 0.8;
+    opacity: 0.7;
+    font-size: 1.2rem;
 }
 
 .cta:hover {
@@ -152,13 +158,18 @@ main .buttons {
     opacity: 1;
 }
 
-.contact {
+/* .contact {
     border-radius: 4px;
     padding: 0.5rem 1rem;
     border: solid var(--white) 1px;
-}
+} */
 .view-more {
     background-color: #0000009d;
+    opacity: 0.8;
+}
+
+.view-more:hover {
+    opacity: 1;
 }
 
 .drop-btn {
@@ -175,7 +186,7 @@ main .buttons {
     right: 0;
     top:0;
     width: 50vw;
-    background-color: rgba(32, 3, 48, 0.61);
+    background-color: rgba(0, 0, 0, 0.61);
     height: 100vh;
     box-shadow: -5px 0 1px #000;
 }
@@ -194,9 +205,20 @@ main .buttons {
     align-items: center;
     gap: 8px;
     width: fit-content;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
+
+.bg-video {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -99999;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 /* Medias queries */
 @media (max-width:1000px) {
     html {
