@@ -1,0 +1,184 @@
+:root {
+    --dark-purple: #10002B;
+    --purple: #8F00FF;
+    --pink: #FF00F5;
+    --white: #F4F4F4;
+}
+
+* {
+    font-family: 'Satoshi', sans-serif;
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+img,
+video,
+svg {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+body {
+    min-height: 100dvh;
+    background-color: var(--dark-purple);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    margin: 0 auto;
+    width: 92%;
+    max-width: 1600px;
+}
+
+
+.show {
+    display: flex;
+}
+/* Home */
+.home {
+    height: 100dvh;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+header nav {
+    display: flex;
+    gap: 5rem;
+}
+
+header .logo {
+    max-width: 250px;
+}
+
+header nav a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.2rem;
+    transition: all 0.2s;
+    padding-bottom: 8px;
+    opacity: 0.8;
+}
+
+header nav a:hover {
+    border-bottom: solid var(--white) 1px;
+    opacity: 1;
+}
+
+header .dropdown-container {
+    display: none;
+}
+
+main {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+main .title {
+    margin-bottom: 1rem;
+}
+
+main h1 {
+    font-size: 3rem;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    max-width: 750px;
+}
+
+main .buttons {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.button {
+    border-radius: 4px;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.cta {
+    background-color: var(--purple);
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.cta:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.view-more {
+    background-color: #0000009d;
+}
+
+/* Medias queries */
+@media (max-width:1000px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:800px) {
+    html {
+        font-size: 12px;
+    }
+
+
+    main {
+        height: 60vh;
+    }
+
+    header .logo {
+        max-width: 200px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+}
+
