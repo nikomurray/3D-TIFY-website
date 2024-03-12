@@ -81,10 +81,8 @@ header {
 header nav {
     display: flex;
     gap: 5rem;
-    background: #00000051;
     padding: 1.2rem 2rem;
     border-radius: 8px;
-    height: 80px;
 }
 
 header .logo {
@@ -150,11 +148,11 @@ main .buttons {
     background-color: var(--purple);
     font-weight: 700;
     font-size: 1.2rem;
+    opacity: 0.8;
 }
 
 .cta:hover {
-    transform: scale(1.1);
-
+    opacity: 1;
 }
 
 /* .contact {
@@ -175,7 +173,7 @@ main .buttons {
     display: none;
     position: absolute;
     right: 2rem;
-    top: 5rem;
+    top: 6rem;
     z-index: 999;
 }
 
