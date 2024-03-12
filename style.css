@@ -29,7 +29,7 @@ svg {
 
 body {
     min-height: 100dvh;
-    background-color: var(--dark-purple);
+    background-color:#000;
 }
 
 h1,
