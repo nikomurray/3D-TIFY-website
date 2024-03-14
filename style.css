@@ -56,8 +56,8 @@ ul {
 
 .container {
     margin: 0 auto;
-    width: 92%;
-    max-width: 1800px;
+    width: 90%;
+    max-width: 1600px;
 }
 
 
@@ -221,8 +221,8 @@ main .buttons {
 
 .cta-page {
     padding: 1rem 0;
-    background: rgb(128,3,199);
-    background: linear-gradient(0deg, rgba(128,3,199,1) 0%, rgba(0,0,0,1) 100%);
+    background: rgb(128, 3, 199);
+    background: linear-gradient(0deg, rgba(128, 3, 199, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 h3 {
@@ -241,6 +241,7 @@ h4 {
 .cta-benefits {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
     margin-top: 3rem;
 }
 
@@ -254,8 +255,8 @@ h4 {
     display: flex;
     align-items: center;
     gap: 8px;
-    background: rgb(29,0,60);
-    background: linear-gradient(90deg, rgba(29,0,60,1) 0%, rgba(118, 0, 186, 0.761) 100%);
+    background: rgb(29, 0, 60);
+    background: linear-gradient(90deg, rgba(29, 0, 60, 1) 0%, rgba(118, 0, 186, 0.761) 100%);
     width: fit-content;
     background-color: rgba(0, 0, 0, 0.498);
     padding: 0.5rem 2rem;
@@ -267,6 +268,30 @@ h4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    border-radius: 4px;
+}
+
+
+.benefit-p {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.people {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.5rem;
+}
+
+.people span {
+    font-size: 3rem;
+}
+
+.benefit-clients {
+    width: fit-content;
+    border: solid #fff 1px;
+    padding: 1rem 3rem;
     border-radius: 4px;
 }
 
@@ -285,7 +310,7 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem 0;
+    padding: 2rem 0;
     gap: 1rem;
 }
 
@@ -303,7 +328,7 @@ h4 {
 .service-buy {
     cursor: pointer;
     font-size: 1.4rem;
-    background:var(--pink);
+    background: var(--pink);
     padding: 1rem 3rem;
     border-radius: 32px;
     transition: all 0.2;
@@ -314,10 +339,16 @@ h4 {
     opacity: 1;
 }
 
+.service-detail {
+    text-align: center;
+    padding: 0 1rem;
+    opacity: 0.8;
+}
+
 .features-section {
     width: 100%;
     background-color: #00000055;
-    padding: 2rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -330,18 +361,68 @@ h4 {
     align-items: center;
     gap: 4px;
 }
-/* Medias queries */
-@media (max-width:1000px) {
-    html {
-        font-size: 14px;
-    }
+
+.contact-info {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
 }
 
-@media (max-width:800px) {
+.contact-info p {
+    width: fit-content;
+    background-color: #00000028;
+    border: solid #fff 1px;
+    border-radius: 4px;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: all 0.2s;
+}
+
+.contact-info p:hover {
+    background: none;
+}
+
+.contact-info p:first-child {
+    grid-column: span 2;
+    font-size: 1.2rem;
+}
+
+
+h5 {
+    padding-top: 1rem;
+    font-size: 1.6rem;
+}
+
+
+/* Medias queries */
+@media (max-width:1000px) {
     html {
         font-size: 12px;
     }
 
+    .cta-benefits {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .benefits-service {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        border-radius: 4px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:800px) {
 
     main {
         height: 70vh;
