@@ -24,13 +24,15 @@
       <div class="container">
         <!-- home-header -->
         <header>
-          <div class="logo"><img src="img/full-logo.svg" alt="logo" /></div>
+          <div class="logo">
+            <img src="img/full-logo.svg" alt="logo" width="300" />
+          </div>
           <nav>
-            <a href="#ctaPage"
+            <a href="#servicesHeader"
               ><span class="material-symbols-outlined"> deployed_code </span
               >Servicios</a
             >
-            <a href="#"
+            <a href="#infoMain"
               ><span class="material-symbols-outlined"> info </span>Quienes
               somos</a
             >
@@ -54,9 +56,11 @@
           </h2>
           <div class="buttons">
             <div class="button cta">
-              <a href="#ctaPage">Animar mi marca!</a>
+              <a href="#servicesHeader">Animar mi marca!</a>
             </div>
-            <div class="button view-more"><a href="ctaPage">Ver mas</a></div>
+            <div class="button view-more">
+              <a href="#servicesHeader">Ver mas</a>
+            </div>
           </div>
         </main>
       </div>
@@ -97,7 +101,7 @@
 
     <!-- SERVICES -->
     <div class="container">
-      <div class="services-header">
+      <div class="services-header" id="servicesHeader">
         <h3>Servicios</h3>
         <a href="#">Ver mas proyectos</a>
       </div>
@@ -111,7 +115,7 @@
             </p>
             <p>
               <span class="material-symbols-outlined"> check_circle </span
-              >Storyboard 
+              >Storyboard
             </p>
             <p>
               <span class="material-symbols-outlined"> check_circle </span
@@ -136,16 +140,18 @@
         <div class="service-info">
           <h4>Animación 3D para visualizacion de producto</h4>
           <div class="service-features">
-            <p><span class="material-symbols-outlined">
-              check_circle
-              </span>Enfoque en la funcionalidad y características técnicas</p>
-            <p><span class="material-symbols-outlined">
-              check_circle
-              </span>Detalle y precisión</p>
-              <p><span class="material-symbols-outlined">
-                check_circle
-                </span>Dinamismo</p>
-               
+            <p>
+              <span class="material-symbols-outlined"> check_circle </span
+              >Enfoque en la funcionalidad y características técnicas
+            </p>
+            <p>
+              <span class="material-symbols-outlined"> check_circle </span
+              >Detalle y precisión
+            </p>
+            <p>
+              <span class="material-symbols-outlined"> check_circle </span
+              >Dinamismo
+            </p>
           </div>
         </div>
         <div class="service-video">
@@ -166,15 +172,18 @@
         <div class="service-info">
           <h4>Animación 3D 360° para visualización de producto</h4>
           <div class="service-features">
-            <p><span class="material-symbols-outlined">
-              check_circle
-              </span>Experiencia inmersiva</p>
-              <p><span class="material-symbols-outlined">
-                check_circle
-                </span>Amplia cobertura de visualización</p>
-                <p><span class="material-symbols-outlined">
-                  check_circle
-                  </span>Detalle y precision</p>
+            <p>
+              <span class="material-symbols-outlined"> check_circle </span
+              >Experiencia inmersiva
+            </p>
+            <p>
+              <span class="material-symbols-outlined"> check_circle </span
+              >Amplia cobertura de visualización
+            </p>
+            <p>
+              <span class="material-symbols-outlined"> check_circle </span
+              >Detalle y precision
+            </p>
           </div>
         </div>
         <div class="service-video">
@@ -192,29 +201,39 @@
       </div>
     </div>
 
-    <!-- INFO -->
-    <div class="container">
-      <div class="info-main">
-        <div class="info-text">
-          <h3>Sobre nosotros</h3>
-          <p>
-            Somos un equipo dedicado a la producción de contenido multimedia
-            digital 3D , con sede en la Ciudad Autónoma de Buenos Aires.
-          </p>
-          <p> Especializados en la creación de animaciones diseñadas para
-            potenciar la imagen de tu <span>marca</span> y que destaques tu producto en las
-            <span>redes sociales</span>.</p>
-        </div>
-        <img src="./img/team.svg" alt="" />
-      </div>
-      
     <!-- WORKFLOW -->
     <div class="container">
-      
+      <div class="workflow">
+        <h3>Metodo de trabajo</h3>
+        <p>
+          Considérenos como miembros integrales de su equipo. Juntos, haremos
+          realidad sus ideas. Sólo 3 pasos para hacerlo realidad.
+        </p>
+        <div class="work-steps">
+          <div class="work">
+            <h6>
+              <span class="material-symbols-outlined"> psychology </span>Diseño
+              de idea
+            </h6>
+            <p>1. El primer paso es tener una reunión para entender sus necesidades y requerimientos. Hablaremos del proyecto y estableceremos un presupuesto.</p>
+          </div>
+          <div class="work">
+            <h6>
+              <span class="material-symbols-outlined"> 3d_rotation </span
+              >Empezar el proyecto
+            </h6>
+            <p>2. Si está de acuerdo con nuestro presupuesto y cronograma, nuestro equipo de diseño y desarrollo comenzará a trabajar en su idea.</p>
+          </div>
+          <div class="work">
+            <h6>
+              <span class="material-symbols-outlined"> editor_choice </span
+              >Resultados
+            </h6>
+            <p>3. Podras ver resultados a medida que se avanza en el proyecto.</p>
+          </div>
+        </div>
+      </div>
     </div>
-
-    </div>
-
     <script src="main.js"></script>
   </body>
 </html>

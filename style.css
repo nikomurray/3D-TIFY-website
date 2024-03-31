@@ -237,7 +237,7 @@ iframe {
 
 .service-info h4 {
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 900;
     border-radius: 4px;
 }
 
@@ -259,7 +259,7 @@ iframe {
 }
 
 hr {
-    grid-column:span 2;
+    grid-column: span 2;
     opacity: 0.4;
 }
 
@@ -268,18 +268,18 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 1rem;
+    gap: 1.8rem;
     font-size: 1.4rem;
     height: 100%;
 }
 
 .service-features p {
-    background: rgb(78,78,78);
-background: linear-gradient(90deg, rgba(78,78,78,1) 0%, rgba(0,0,0,1) 100%);
+    background: rgb(78, 78, 78);
+    background: linear-gradient(90deg, rgba(78, 78, 78, 1) 0%, rgba(0, 0, 0, 1) 100%);
     width: fit-content;
     padding: 0.5rem 0;
     padding-left: 0.4rem;
-    padding-right:2rem;
+    padding-right: 2rem;
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -287,6 +287,7 @@ background: linear-gradient(90deg, rgba(78,78,78,1) 0%, rgba(0,0,0,1) 100%);
     gap: 8px;
     font-size: 1rem;
 }
+
 /* INFO */
 .info-main {
     padding: 3rem 0;
@@ -300,13 +301,57 @@ background: linear-gradient(90deg, rgba(78,78,78,1) 0%, rgba(0,0,0,1) 100%);
     grid-column: span 2;
 }
 
-
+.info-text p {
+    line-height: 2;
+    font-weight: 300;
+}
 
 .info-text p span {
     color: var(--purple);
     font-weight: 700;
 }
-  
+
+.info-main img {
+    max-width: 400px;
+}
+
+/* WORKFLOW  */
+.workflow {
+    margin-top: 3rem;
+}
+
+.workflow h5 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.workflow p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    width: 70%;
+}
+
+.work-steps {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem ;
+}
+
+.work h6 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background: rgb(6,2,5);
+    background: linear-gradient(90deg, rgba(6,2,5,1) 0%, rgba(94,0,144,1) 100%);
+border-radius: 4px;
+    width: fit-content;
+    padding: 0.5rem 2rem ;
+    margin-bottom: 1rem;
+}
+
 /* Medias queries */
 @media (max-width:1000px) {
     html {
@@ -342,8 +387,21 @@ background: linear-gradient(90deg, rgba(78,78,78,1) 0%, rgba(0,0,0,1) 100%);
     }
 
     .info-main {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
+    iframe {
+        height: 250px;
+    }
+
+    .info-main img {
+        max-width: 200px;
+    }
+
+    .workflow p {
+        width: 100%;
+    }
+
 }
