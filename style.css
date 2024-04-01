@@ -335,7 +335,15 @@ hr {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem ;
+    gap: 3rem;
+}
+
+.work {
+  border: solid #404040 1px;
+  background-color: #070707c1;
+  padding: 1rem ;
+  border-radius: 4px;
+  width: 90%;
 }
 
 .work h6 {
@@ -344,11 +352,10 @@ hr {
     gap: 4px;
     font-size: 1.6rem;
     font-weight: 700;
-    background: rgb(6,2,5);
-    background: linear-gradient(90deg, rgba(6,2,5,1) 0%, rgba(94,0,144,1) 100%);
-border-radius: 4px;
+    background-color: #212121c1;
+    border-radius: 4px;
     width: fit-content;
-    padding: 0.5rem 2rem ;
+    padding: 0.5rem 1rem ;
     margin-bottom: 1rem;
 }
 
